@@ -1,0 +1,4 @@
+# Command to install or update dependencies
+dependency_command: bundle install && yarn install
+# Command to run when "Run" button clicked
+run_command: bin/dev
