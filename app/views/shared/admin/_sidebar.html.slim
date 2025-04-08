@@ -12,22 +12,22 @@ aside.app-sidebar.bg-body-secondary.shadow data-bs-theme="dark"
     /! Sidebar Menu
     nav.mt-2
       ul.nav.sidebar-menu.flex-column data-lte-toggle="treeview" data-accordion="false"
-        li.nav-header 数据
+        li.nav-header Data
         li.nav-item
           = link_to admin_root_path, class: "nav-link #{admin_active_for(admin_root_path, current_path)}" do
             i.nav-icon.fas.fa-tachometer-alt
-            span 数据中心
-        li.nav-header 博客
+            span Data Center
+        li.nav-header Blog
         li.nav-item
           = link_to admin_posts_path, class: "nav-link #{admin_active_for(admin_posts_path, current_path)}" do
             i.nav-icon.fas.fa-pen-square
-            span 博客管理
+            span Blog Management
         li.nav-item
           = link_to admin_all_comments_path, class: "nav-link #{admin_active_for(admin_all_comments_path, current_path)}" do
             i.nav-icon.fas.fa-comment
-            span 评论管理
-        li.nav-header 标签
+            span Comment Management
+        li.nav-header Labels
         li.nav-item
           = link_to admin_labels_path, class: "nav-link #{admin_active_for(admin_labels_path, current_path)}" do
             i.nav-icon.fas.fa-list
-            span 标签管理
+            span Label Management
