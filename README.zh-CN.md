@@ -4,80 +4,80 @@ WBlog
 [![Maintainability](https://api.codeclimate.com/v1/badges/545d8372a9dda70b77fe/maintainability)](https://codeclimate.com/github/windy/wblog/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/545d8372a9dda70b77fe/test_coverage)](https://codeclimate.com/github/windy/wblog/test_coverage)
 
-为移动而生的 Ruby on Rails 开源博客. WBlog 基于 MIT 协议, 自由使用.
+The open source Ruby on Rails blog system built for mobile. WBlog is licensed under MIT, free to use.
 
-现已全面支持 Ruby on Rails 6.1 版本!!!
+Now fully supports Ruby on Rails 6.1 version!!!
 
-New: 现已经从 webpacker 升级至 jsbundling & cssbundling.
+New: Now upgraded from webpacker to jsbundling & cssbundling.
 
-* 用户极为友好的阅读体验
-* 自带干净的评论系统
-* 简洁而不简单的发布博客流程
+* Extremely user-friendly reading experience
+* Clean built-in comment system
+* Simple yet powerful blog publishing process
 
-访问我的博客以体验: <https://yafeilee.com>
+Visit my blog to experience: <https://yafeilee.com>
 
-截图如下: <#screenshots>
+Screenshots below: <#screenshots>
 
-### WBlog 的设计目标
+### WBlog Design Goals
 
-* 优先以手机用户体验为主
-* 独立干净的评论系统
-* 良好的博客语法高亮支持
-* 可邮件订阅
-* Markdown 支持
-* 尽可能独立
+* Mobile user experience first
+* Independent and clean comment system
+* Great blog syntax highlighting support
+* Email subscription
+* Markdown support
+* Maximum independence
 
-### 特色
+### Features
 
-* 优先支持移动端访问
-* 响应式设计, 支持所有屏幕终端, 并且支持微信扫码继续阅读和分享
-* 自带评论系统, 干净而方便
-* Markdown 支持, 博客语法高亮, 方便技术性博客
-* 开源可商用, 定制能力强
+* Mobile access priority
+* Responsive design, supports all screen terminals, and supports WeChat QR code for continued reading and sharing
+* Built-in comment system, clean and convenient
+* Markdown support, blog syntax highlighting, convenient for technical blogs
+* Open source and commercial use, strong customization capability
 
-### 目标
+### Goal
 
-`Ruby on Rails` 下最好用的独立博客建站系统
+The best independent blog building system under `Ruby on Rails`
 
-### 开发环境
+### Development Environment
 
-WBlog 是一个标准的 Ruby on Rails 应用. 开发环境依赖于:
+WBlog is a standard Ruby on Rails application. Development environment depends on:
 
 * Ruby ( = 3.1.2 )
 * Postgresql ( >= 9.x )
 * node ( >= 18 )
 
-配置 WBlog:
+Configure WBlog:
 
   ```shell
-  # rails 依赖
+  # rails dependencies
   gem install bundler
   bundle install
-  # node 依赖
+  # node dependencies
   npm install yarn -g
   yarn install
-  # 配置更新
+  # configuration updates
   cp config/application.yml.example config/application.yml
   cp config/database.yml.example config/database.yml
   ```
 
-  更新对应配置: application.yml & database.yml.
+  Update corresponding configurations: application.yml & database.yml.
 
-就这样, 可以尝试启动了:
+That's it, you can try to start it:
 
   ```shell
   bin/dev
   ```
 
-登录 http://localhsot:3000/admin 来发布第一篇博客.
+Login to http://localhost:3000/admin to publish your first blog.
 
-### 发布应用
+### Deployment
 
-WBlog 采用了 `mina` 作为自动化发布工具, 使用 `nginx`, `puma` 为相关容器.
+WBlog uses `mina` as an automated deployment tool, using `nginx`, `puma` as related containers.
 
-对应的发布流程在: [WBlog 的发布流程](https://github.com/windy/wblog/wiki)
+The deployment process is at: [WBlog Deployment Process](https://github.com/windy/wblog/wiki)
 
-### 技术栈
+### Technology Stack
 
 * Ruby on Rails 6.1
 * Ruby 3.1.2
@@ -87,7 +87,7 @@ WBlog 采用了 `mina` 作为自动化发布工具, 使用 `nginx`, `puma` 为�
 * Postgresql
 
 
-## Ruby 相关开源博客推荐
+## Recommended Ruby Open Source Blogs
 
 * writings.io( Ruby on Rails 4.0.2 ): <https://github.com/chloerei/writings>
 * jekyll( Ruby Gem, Markdown, Static ): <http://jekyllrb.com/>
@@ -97,38 +97,38 @@ WBlog 采用了 `mina` 作为自动化发布工具, 使用 `nginx`, `puma` 为�
 
 ### Screenshots
 
-首页:
+Home Page:
 
-![screenshot home](https://github.com/windy/wblog/raw/master/doc/wblog_s/home.png)
+![screenshot home](https://github.com/windy/wblog/raw/master/doc/wblog_s_en/home.png)
 
-小屏首页:
+Mobile Home Page:
 
-![screenshot home small](https://github.com/windy/wblog/raw/master/doc/wblog_s/home-small.png)
+![screenshot home small](https://github.com/windy/wblog/raw/master/doc/wblog_s_en/home-small.png)
 
-展开的小屏首页:
+Expanded Mobile Home Page:
 
-![screenshot home hover](https://github.com/windy/wblog/raw/master/doc/wblog_s/home-small-hover.png)
+![screenshot home hover](https://github.com/windy/wblog/raw/master/doc/wblog_s_en/home-small-hover.png)
 
-博客详情页:
+Blog Detail Page:
 
-![screenshot post](https://github.com/windy/wblog/raw/master/doc/wblog_s/post.png)
+![screenshot post](https://github.com/windy/wblog/raw/master/doc/wblog_s_en/post.png)
 
-展开的博客详情页:
+Expanded Blog Detail Page:
 
-![screenshot post hover](https://github.com/windy/wblog/raw/master/doc/wblog_s/post-hover.png)
+![screenshot post hover](https://github.com/windy/wblog/raw/master/doc/wblog_s_en/post-hover.png)
 
-管理员登录页:
+Admin Login Page:
 
-![screenshot admin](https://github.com/windy/wblog/raw/master/doc/wblog_s/admin-login.png)
+![screenshot admin](https://github.com/windy/wblog/raw/master/doc/wblog_s_en/admin-login.png)
 
-管理页面板:
+Admin Dashboard:
 
-![screenshot admin](https://github.com/windy/wblog/raw/master/doc/wblog_s/admin-dashboard.png)
+![screenshot admin](https://github.com/windy/wblog/raw/master/doc/wblog_s_en/admin-dashboard.png)
 
-发布新博客页:
+Publish New Blog Page:
 
-![screenshot admin](https://github.com/windy/wblog/raw/master/doc/wblog_s/admin-post.png)
+![screenshot admin](https://github.com/windy/wblog/raw/master/doc/wblog_s_en/admin-post.png)
 
-博客管理页:
+Blog Management Page:
 
-![screenshot admin](https://github.com/windy/wblog/raw/master/doc/wblog_s/admin-posts.png)
+![screenshot admin](https://github.com/windy/wblog/raw/master/doc/wblog_s_en/admin-posts.png)
